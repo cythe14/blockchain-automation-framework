@@ -79,8 +79,11 @@ spec:
           permissions: [ALL]
 
     cordapps:
-      getcordapps: false
-
+      getcordapps: true
+      jars:
+                - url: https://github.com/cythe14/blockchain-automation-framework/blob/local/platforms/r3-corda/scripts/auction-cordapp-1.0.jar
+                - url: https://github.com/cythe14/blockchain-automation-framework/blob/local/platforms/r3-corda/scripts/negotiation-cordapp-0.2.jar
+        
     volume:
       baseDir: /base/corda
     resources:
